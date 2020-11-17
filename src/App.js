@@ -1,15 +1,17 @@
 import React from 'react';
-import TrafficSignal from './TrafficSignal';
 import './App.css';
+import TrafficSignal from './TrafficSignal';
 import Cars from './Cars';
 
-function App() {
-  return (
-    <div className="container">
-      <Cars />
-      <TrafficSignal />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <TrafficSignal />
+        <Cars />
+      </div>
+    );
+  }
 }
 
 export default App;
